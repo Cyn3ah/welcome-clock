@@ -6,6 +6,10 @@ import Welcome from "./components/welcome/Welcome"
 import Clock from "./components/clock/Clock"
 import Contact from "./components/contact/Contact"
 import Navigation from "./components/navigation/Navigation"
+import Error404 from "./components/error404/Error404.js"
+import Jeopardy from "./components/jeopardy/Jeopardy"
+
+// import { Route, Switch } from 
 
 class App extends Component {
   render() {
@@ -14,24 +18,25 @@ class App extends Component {
       
       <Navigation />
       
-
         <Switch>
           <Route 
             exact
             path="/"
             render={(props) => <Welcome {...props}
             name="Cynthia"/>}
-          />
+            />
+
           <Route 
             path="/welcome/:name"
             render={(props) => <Welcome {...props}
             name={props.match.params.name} />}
-          />
+            />
 
           <Route path="/clock" component={Clock} />
           <Route path="/contact" component={Contact} />
+          <Route path="/jeopardy" componenet={Jeopardy} />
 
-          <Route path="/error" component={Error} />
+          <Route component={Error404} />
         </Switch>
           
       
