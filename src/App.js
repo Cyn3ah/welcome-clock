@@ -12,6 +12,20 @@ import Jeopardy from "./components/jeopardy/Jeopardy"
 // import { Route, Switch } from 
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      score: ""
+    }
+  }
+
+  updateScore = (score) => {
+    this.setState((state, props) => ({
+      score: score + this.state.data.value
+    }))
+    
+  }
+
   render() {
     return (
       <div className="App">
@@ -34,7 +48,7 @@ class App extends Component {
 
           <Route path="/clock" component={Clock} />
           <Route path="/contact" component={Contact} />
-          <Route path="/jeopardy" componenet={Jeopardy} />
+          <Route path="/jeopardy" component={Jeopardy} />
 
           <Route component={Error404} />
         </Switch>
