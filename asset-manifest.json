@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/welcome-clock/static/css/main.d0a08e73.chunk.css",
+    "main.js": "/welcome-clock/static/js/main.29aa71b9.chunk.js",
+    "main.js.map": "/welcome-clock/static/js/main.29aa71b9.chunk.js.map",
+    "runtime-main.js": "/welcome-clock/static/js/runtime-main.532f10ea.js",
+    "runtime-main.js.map": "/welcome-clock/static/js/runtime-main.532f10ea.js.map",
+    "static/js/2.794f91e5.chunk.js": "/welcome-clock/static/js/2.794f91e5.chunk.js",
+    "static/js/2.794f91e5.chunk.js.map": "/welcome-clock/static/js/2.794f91e5.chunk.js.map",
+    "index.html": "/welcome-clock/index.html",
+    "precache-manifest.54f0a80c73f0e7652b67a4da732c8884.js": "/welcome-clock/precache-manifest.54f0a80c73f0e7652b67a4da732c8884.js",
+    "service-worker.js": "/welcome-clock/service-worker.js",
+    "static/css/main.d0a08e73.chunk.css.map": "/welcome-clock/static/css/main.d0a08e73.chunk.css.map",
+    "static/js/2.794f91e5.chunk.js.LICENSE.txt": "/welcome-clock/static/js/2.794f91e5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.532f10ea.js",
+    "static/js/2.794f91e5.chunk.js",
+    "static/css/main.d0a08e73.chunk.css",
+    "static/js/main.29aa71b9.chunk.js"
+  ]
+}
