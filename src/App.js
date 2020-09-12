@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom";
-
 import './App.css'
+
 import Welcome from "./components/welcome/Welcome"
 import Clock from "./components/clock/Clock"
 import Contact from "./components/contact/Contact"
 import Navigation from "./components/navigation/Navigation"
-import Error404 from "./components/error404/Error404.js"
 import Jeopardy from "./components/jeopardy/Jeopardy"
+import Error404 from "./components/error404/Error404.js"
 
 // import { Route, Switch } from 
 
@@ -23,28 +23,27 @@ class App extends Component {
     this.setState((state, props) => ({
       score: score + this.state.data.value
     }))
-    
   }
 
   render() {
     return (
       <div className="App">
-      
-      <Navigation />
-      
+
+        <Navigation />
+
         <Switch>
-          <Route 
+          <Route
             exact
             path="/"
             render={(props) => <Welcome {...props}
-            name="Cynthia"/>}
-            />
+              name="Cynthia" />}
+          />
 
-          <Route 
+          <Route
             path="/welcome/:name"
             render={(props) => <Welcome {...props}
-            name={props.match.params.name} />}
-            />
+              name={props.match.params.name} />}
+          />
 
           <Route path="/clock" component={Clock} />
           <Route path="/contact" component={Contact} />
@@ -52,8 +51,8 @@ class App extends Component {
 
           <Route component={Error404} />
         </Switch>
-          
-      
+
+
       </div>
     );
   }
