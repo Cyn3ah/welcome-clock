@@ -14,7 +14,7 @@ class Contact extends Component {
     }
 
     handleChange = (event) => {
-        const formData = {...this.state.formData};
+        const formData = { ...this.state.formData };
         formData[event.target.name] = event.target.value;
 
         this.setState({ formData });
@@ -42,7 +42,7 @@ class Contact extends Component {
         if (this.state.submitted) {
             return (
                 <div className="Contact">
-                    <p>Thank you, {this.state.formData.firstName}, for submitting the form!</p>
+                    <h2>Thank you, {this.state.formData.firstName}, wanna play Jeopardy?</h2>
                     <button onClick={this.resetForm}>Reset Form</button>
                 </div>
             )
@@ -76,9 +76,8 @@ class Contact extends Component {
                 </form>
 
                 <div>
-                    {this.state.formData.firstName}
-                    <br />
-                    {this.state.formData.lastName}
+                    Full Name:{" "}
+                    {this.state.formData.firstName}{" "}{this.state.formData.lastName}
                 </div>
             </div>
         );

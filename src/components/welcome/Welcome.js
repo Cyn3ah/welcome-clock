@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Welcome (props) {
+function Welcome(props) {
     return (
         <div className="Welcome">
             <h1>
-            Welcome, {props.name}!
+                Congratulations! You've found {props.name}'s Welcome Clock!
             </h1>
         </div>
     );
